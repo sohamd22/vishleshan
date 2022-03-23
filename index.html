@@ -22,12 +22,24 @@
       <nav>
         <div class="navbar">
           <img src="images/logo.png" alt="logo" />
-          <div class="nav-links">
-            <a href="">About</a>
-            <a href="">Events</a>
-            <a href="">Contact</a>
-            <a class="reg-link" href="">Register</a>
+          <div class="nav-links mh">
+            <a href="#about">About</a>
+            <a href="#events">Events</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+            <a class="reg-link" href="#events">Register</a>
           </div>
+          <div class="menu dh">
+            <i class="menu-btn fa fa-solid fa-bars"></i>
+            <div class="menu-links">
+              <a href="#about">About</a>
+              <a href="#events">Events</a>
+              <a href="#team">Team</a>
+              <a href="#contact">Contact</a>
+              <a class="reg-link" href="#events">Register</a>
+            </div>
+          </div>
+          
         </div>
       </nav>      
 
@@ -44,14 +56,14 @@
           <a href="" class="reg-btn">Register Now <img src="images/logo.png" alt="logo" /></a>
         </div>
 
-        <img src="images/hero.png" alt="hero-img" />
+        <img class="sec-img" src="images/hero.png" alt="hero-img" />
       </div>
       <img class="slope" src="images/slope.svg" alt="">
     </section>
 
     <section id="about" class="cs">
       <div class="main gr">
-        <img src="images/about.png" alt="about-img" />
+        <img class="sec-img" src="images/about.png" alt="about-img" />
 
         <div class="content">
           <h2>About <span>Vishleshan</span></h2>
@@ -65,20 +77,84 @@
       </div>
     </section>
 
-    <div class="seperator"></div>
-
-    <section id="events" class="cs">
+    <section id="events" class="cm">
+      <img src="images/slope-1.svg" class="slope one">
       <div class="main fl">
         <h2><span>Events</span></h2>
         <div class="event-boxes">
-          <div class="event-box"><a href="">Datathon</a></div>
-          <div class="event-box"><a href="">Visuality</a></div>
-          <div class="event-box"><a href="">Cyber Gaming</a></div>
-          <div class="event-box"><a href="">Mindflix</a></div>
-          <div class="event-box t2"><a href="">Panel Discussion</a></div>
-          <div class="event-box t2"><a href="">Bella Ciao - The Heist</a></div>
-          <div class="event-box t2"><a href="">Ratatouille - The Chef</a></div>
-          <div class="event-box t2"><a href="">Unsolved Mysteries</a></div>
+          <a href="" class="event-box" data-text="Datathon"></a>
+          <a href="" class="event-box" data-text="Visuality"></a>
+          <a href="" class="event-box" data-text="Cyber Gaming"></a>
+          <a href="" class="event-box" data-text="Mindflix"></a>
+          <a href="" class="event-box t2" data-text="Panel Discussion"></a>
+          <a href="" class="event-box t2" data-text="Bella Ciao - The Heist"></a>
+          <a href="" class="event-box t2" data-text="Ratatouille - The Chef"></a>
+          <a href="" class="event-box t2" data-text="Unsolved Mysteries"></a>
+      </div>
+      <img src="images/slope-1.svg" class="slope two">
+    </section>
+
+    <section id="team" class="cs">
+      <div class="main fl">
+        <h2>The <span>Team</span></h2>
+        <div class="team-boxes">
+          <div class="team-box">
+            <img src="images/instagram.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="images/facebook.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
+          
+          <div class="team-box">
+            <img src="images/instagram.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="images/instagram.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="images/instagram.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="images/instagram.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
+          <div class="team-box">
+            <img src="images/instagram.png" alt="">
+
+            <div class="content">
+              <p class="name">Aashvi Shah</p>
+              <span class="role">Team Lead</span>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -86,12 +162,19 @@
       <img class="slope" src="images/slope.svg" alt="">
       <div class="main fl">
         <h2><span>Contact</span></h2>
-        <a href="" class="email-btn">Email</a>
+        <a href="" class="email-btn">Email <i class="fa fa-solid fa-envelope"></i></a>
         <!-- TODO Email Icon -->
         <div class="socials">
           <!-- TODO Instagram, Facebook, Twitter -->
+          <a href=""><img src="images/instagram.png" alt=""></a>
+          <a href=""><img src="images/facebook.png" alt=""></a>
+          <a href=""><img src="images/twitter.png" alt=""></a>
         </div>
       </div>
     </section>
+
+    <script src="https://kit.fontawesome.com/8c4a6a8215.js" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
   </body>
 </html>
