@@ -175,7 +175,12 @@ nav {
   align-items: center;
 
   a:not(.reg-link) {
+    transition: 0.2s;
     margin-right: 4.4rem;
+
+    &:hover {
+      transform: translateY(-3%);
+    }
   }
 }
 
@@ -195,6 +200,12 @@ nav {
   align-items: center;
 
   box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.25);
+  transition: 0.2s;
+
+  &:hover {
+    background-color: darken($p, 5%);
+    transform: translateY(-3%);
+  }
 }
 
 .menu {
@@ -268,6 +279,12 @@ nav {
   text-transform: uppercase;
   border-radius: 12px;
   box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.25);
+  transition: 0.2s;
+
+  &:hover {
+    background-color: darken($p, 5%);
+    transform: translateY(-3%);
+  }
 
   img {
     width: 6.4rem;
@@ -607,15 +624,15 @@ nav {
 
 @media (max-width: 400px) {
   #hero {
-    padding: 0 7rem 10rem;
+    padding: 0 5rem 10rem;
   }
 
   section {
-    padding: 12rem 7rem;
+    padding: 12rem 5rem;
   }
 
   nav {
-    padding: 3.6rem 6.5rem;
+    padding: 3.6rem 5rem;
   }
 
   .images {

@@ -181,7 +181,14 @@ nav {
 }
 
 .nav-links a:not(.reg-link) {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-right: 4.4rem;
+}
+
+.nav-links a:not(.reg-link):hover {
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .reg-link {
@@ -203,6 +210,14 @@ nav {
           align-items: center;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.reg-link:hover {
+  background-color: #1576e9;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .menu {
@@ -288,6 +303,14 @@ nav {
   border-radius: 12px;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.reg-btn:hover {
+  background-color: #1576e9;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .reg-btn img {
@@ -605,13 +628,13 @@ nav {
 
 @media (max-width: 400px) {
   #hero {
-    padding: 0 7rem 10rem;
+    padding: 0 5rem 10rem;
   }
   section {
-    padding: 12rem 7rem;
+    padding: 12rem 5rem;
   }
   nav {
-    padding: 3.6rem 6.5rem;
+    padding: 3.6rem 5rem;
   }
   .images {
     height: 400px;
