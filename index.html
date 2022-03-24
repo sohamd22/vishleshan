@@ -14,14 +14,40 @@
     />
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
 
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <section id="hero" class="cm">
+      <img
+        src="images/abstract/hexa.svg"
+        alt = "hero-down-hex"
+        style="
+          top: 60%;
+          left: 0;
+          transform: scaleX(-1);
+          width: 28.5rem;
+          height: 28.5rem;
+        "
+        class="abstract mh"
+      />
+
+      <img
+        src="images/abstract/hexa.svg"
+        style="
+          top: 8%;
+          right: 0;
+          transform: rotate(180deg) scaleX(-1);
+          width: 31rem;
+          height: 31rem;
+        "
+        class="abstract mh"
+      />
+      
       <nav>
         <div class="navbar">
-          <img src="images/logo.png" alt="logo" />
+          <a href="/"><img src="images/logo.png" alt="logo" /></a>
           <div class="nav-links mh">
             <a href="#about">About</a>
             <a href="#events">Events</a>
@@ -44,6 +70,19 @@
       </nav>      
 
       <div class="main gr">
+        <img
+          src="images/abstract/triangle.svg"
+          style="
+            left: -10.75%;
+            height: 13rem;
+            width: 13rem;
+            top: -3.25rem;
+            transform: rotate(60deg);
+          "
+          alt=""
+          class="abstract"
+        />
+
         <div class="content">
           <h1><span>Vishleshan</span> 1.0</h1>
           <p>
@@ -59,10 +98,23 @@
         <img class="sec-img" src="images/hero.png" alt="hero-img" />
       </div>
       <img class="slope" src="images/slope.svg" alt="">
-    </section>
+    </section>  
 
     <section id="about" class="cs">
       <div class="main gr">
+        <img
+            src="images/abstract/triangle.svg"
+            style="
+              right: -12%;
+              height: 16rem;
+              width: 16rem;
+              top: -15rem;
+              transform: rotate(65deg);
+            "
+            alt=""
+            class="abstract"
+          />
+
         <img class="sec-img" src="images/about.png" alt="about-img" />
 
         <div class="content">
@@ -80,25 +132,63 @@
     <section id="events" class="cm">
       <img src="images/slope-1.svg" class="slope one">
       <div class="main fl">
+        <img
+            src="images/abstract/triangle.svg"
+            style="
+              left: -12%;
+              height: 18rem;
+              width: 18rem;
+              top: -4rem;
+              transform: rotate(125deg);
+            "
+            alt="event-triangle"
+            class="abstract"
+          />
+
         <h2><span>Events</span></h2>
         <div class="event-boxes">
-          <a href="" class="event-box" data-text="Datathon"></a>
-          <a href="" class="event-box" data-text="Visuality"></a>
-          <a href="" class="event-box" data-text="Cyber Gaming"></a>
-          <a href="" class="event-box" data-text="Mindflix"></a>
-          <a href="" class="event-box t2" data-text="Panel Discussion"></a>
-          <a href="" class="event-box t2" data-text="Bella Ciao - The Heist"></a>
-          <a href="" class="event-box t2" data-text="Ratatouille - The Chef"></a>
-          <a href="" class="event-box t2" data-text="Unsolved Mysteries"></a>
+          <a href="../event-pages/datathon.html" target="_blank" class="event-box puzzle" style="background-image: url(images/events/dat-m.svg);" data-text="Datathon"></a>
+          <a href="../event-pages/visuality.html" target="_blank" class="event-box" style="background-image: url(images/events/vis-m.svg);" data-text="Visuality"></a>
+          <a href="../event-pages/cyber-gaming.html" target="_blank" class="event-box" style="background-image: url(images/events/cyg-m.svg);" data-text="Cyber Gaming"></a>
+          <a href="../event-pages/mindflix.html" target="_blank" class="event-box" style="background-image: url(images/events/mfl-m.svg);" data-text="Mindflix"></a>
+          <a href="../event-pages/panel-discussion.html" target="_blank" class="event-box t2" style="background-image: url(images/events/pd-m.svg);" data-text="Panel Discussion"></a>
+          <a href="../event-pages/bella-ciao-the-heist.html" target="_blank" class="event-box t2" style="background-image: url(images/events/hei-m.svg);" data-text="Bella Ciao - The Heist"></a>
+          <a href="../event-pages/ratatouille-the-chef.html" target="_blank" class="event-box t2" style="background-image: url(images/events/cook-m.svg);" data-text="Ratatouille - The Chef"></a>
+          <a href="../event-pages/unsolved-mysteries.html" target="_blank" class="event-box t2 calc" style="background-image: url(images/events/mys-m.svg);" data-text="Unsolved Mysteries"></a>
       </div>
       <img src="images/slope-1.svg" class="slope two">
     </section>
 
     <section id="team" class="cs">
+      <img
+        src="images/abstract/hexa.svg"
+        alt="team-hex"
+        style="
+          top: 3%;
+          right: 0;
+          width: 32rem;
+          height: 32rem;
+        "
+        class="abstract mh"
+      />
+
       <div class="main fl">
+        <img
+            src="images/abstract/triangle.svg"
+            style="
+              left: -6%;
+              height: 15rem;
+              width: 15rem;
+              top: -3%;
+              transform: rotate(135deg);
+            "
+
+            class="abstract mh"
+          />
+
         <h2>The <span>Team</span></h2>
         <div class="team-boxes">
-          <div class="team-box">
+          <div class="team-box sec">
             <img src="images/instagram.png" alt="">
 
             <div class="content">
@@ -124,7 +214,7 @@
             </div>
           </div>
           <div class="team-box">
-            <img src="images/instagram.png" alt="">
+            <img src="images/facebook.png" alt="">
 
             <div class="content">
               <p class="name">Aashvi Shah</p>
@@ -140,14 +230,14 @@
             </div>
           </div>
           <div class="team-box">
-            <img src="images/instagram.png" alt="">
+            <img src="images/facebook.png" alt="">
 
             <div class="content">
               <p class="name">Aashvi Shah</p>
               <span class="role">Team Lead</span>
             </div>
           </div>
-          <div class="team-box">
+          <div class="team-box code">
             <img src="images/instagram.png" alt="">
 
             <div class="content">
@@ -159,6 +249,57 @@
     </section>
 
     <section id="contact" class="cm">
+      <img
+        src="images/abstract/triangle.svg"
+        style="
+          left: 50%;
+          transform: translate(-50%, 0) rotate(110deg);
+          height: 15rem;
+          width: 15rem;
+          top: -5.5%;
+        "
+        alt=""
+        class="abstract"
+      />
+
+      <img
+      src="images/abstract/triangle.svg"
+      style="
+        right: -2.7%;
+        bottom: 0;
+        height: 15rem;
+        width: 15rem;        
+        transform: rotate(150deg);
+      "
+
+      class="abstract mh"
+    />
+
+      <img
+        src="images/abstract/hexa.svg"
+        alt="contact-hex"
+        style="
+          top: 3%;
+          right: 0;
+          width: 28.5rem;
+          height: 28.5rem;
+        "
+        class="abstract mh"
+      />
+
+      <img
+        src="images/abstract/hexa.svg"
+        alt="contact-hex"
+        style="
+          bottom: -9%;
+          left: 0;
+          width: 28.5rem;
+          height: 28.5rem;
+          transform: scaleX(-1);
+        "
+        class="abstract mh"
+      />
+
       <img class="slope" src="images/slope.svg" alt="">
       <div class="main fl">
         <h2><span>Contact</span></h2>

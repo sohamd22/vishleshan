@@ -10,6 +10,8 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -123,6 +125,11 @@ a {
 
 .slope {
   width: 100vw;
+}
+
+.abstract {
+  position: absolute;
+  z-index: 1;
 }
 
 .cm {
@@ -285,6 +292,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .sec-img {
@@ -292,6 +300,7 @@ nav {
 }
 
 .reg-btn {
+  position: relative;
   font-size: 2.8rem;
   padding: 11px 22px;
   letter-spacing: 0.65px;
@@ -314,6 +323,7 @@ nav {
 
 #events {
   padding: 0 14.5rem;
+  z-index: 1;
 }
 
 #events h2 {
@@ -332,6 +342,7 @@ nav {
 }
 
 .fl {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,12 +379,40 @@ nav {
   position: relative;
   width: 260px;
   height: 330px;
-  background-color: #720bd3;
   margin: 23px 15px 23px 15px;
   border-radius: 20px;
   border: solid 1px #f3fbff;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  background-size: 108%;
+}
+
+.event-box.puzzle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -18.25rem;
+  background-image: url(images/abstract/puzzle.svg);
+  background-size: cover;
+  width: 330px;
+  height: 330px;
+  z-index: -1;
+}
+
+.event-box.calc::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -19.25rem;
+  background-image: url(images/abstract/calc.svg);
+  background-size: cover;
+  width: 330px;
+  height: 330px;
+  z-index: -1;
 }
 
 .event-box::before {
@@ -411,7 +450,9 @@ nav {
 }
 
 #team {
+  position: relative;
   padding-bottom: 11rem;
+  z-index: 1;
 }
 
 #team h2 {
@@ -452,6 +493,30 @@ nav {
   padding: 0 20px 38px;
   position: relative;
   margin: 45px 20px;
+}
+
+.team-box.sec::after {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: -62%;
+  background-image: url(images/abstract/team-sec.svg);
+  background-size: cover;
+  width: 230px;
+  height: 230px;
+  z-index: -1;
+}
+
+.team-box.code::after {
+  content: "";
+  position: absolute;
+  bottom: 14%;
+  right: -52%;
+  background-image: url(images/abstract/team-code.svg);
+  background-size: cover;
+  width: 260px;
+  height: 260px;
+  z-index: -1;
 }
 
 .team-box:nth-child(2n + 1) {
@@ -516,7 +581,34 @@ nav {
 }
 
 #contact {
+  position: relative;
   padding: 0 14.5rem 11.5rem 14.5rem;
+}
+
+#contact .main {
+  width: unset;
+}
+
+#contact .main::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -32rem;
+  width: 25rem;
+  height: 25rem;
+  background-size: cover;
+  background-image: url(images/abstract/textL.svg);
+}
+
+#contact .main::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30rem;
+  width: 19rem;
+  height: 18rem;
+  background-size: cover;
+  background-image: url(images/abstract/textS.svg);
 }
 
 #contact .slope {
@@ -615,6 +707,9 @@ nav {
   a {
     font-size: 2rem;
   }
+  img[alt="hero-down-hex"] {
+    top: 88% !important;
+  }
   .gr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -668,6 +763,10 @@ nav {
   #contact {
     padding: 0 12rem 11.5rem 12rem;
   }
+  img[alt="event-triangle"] {
+    height: 13rem !important;
+    width: 13rem !important;
+  }
   .mh {
     display: none !important;
   }
@@ -707,6 +806,9 @@ nav {
   }
   .event-box {
     margin: 18px 15px 18px 15px;
+  }
+  .team-box {
+    margin: 40px 20px;
   }
 }
 
