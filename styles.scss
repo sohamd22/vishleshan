@@ -183,7 +183,12 @@ nav {
   align-items: center;
 
   a:not(.reg-link) {
+    transition: 0.2s;
     margin-right: 4.4rem;
+
+    &:hover {
+      transform: translateY(-3%);
+    }
   }
 }
 
@@ -203,6 +208,12 @@ nav {
   align-items: center;
 
   box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.25);
+  transition: 0.2s;
+
+  &:hover {
+    background-color: darken($p, 5%);
+    transform: translateY(-3%);
+  }
 }
 
 .menu {
@@ -295,11 +306,17 @@ nav {
   text-transform: uppercase;
   border-radius: 12px;
   box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.25);
+  transition: 0.2s;
 
   img {
     width: 6.4rem;
     height: 3.4rem;
     margin-left: 7px;
+  }
+
+  &:hover {
+    background-color: darken($p, 5%);
+    transform: translateY(-3%);
   }
 }
 
@@ -395,6 +412,14 @@ nav {
   border: solid 1px $n;
   box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.25);
   background-size: 108%;
+  transition: 0.25s;
+
+  &:hover {
+    transform: translateY(-3%) rotate(3deg);
+    &::after {
+      display: none;
+    }
+  }
 
   &.puzzle {
     &::after {
@@ -408,6 +433,7 @@ nav {
       width: 330px;
       height: 330px;
       z-index: -1;
+      pointer-events: none;
     }
   }
 
@@ -423,6 +449,7 @@ nav {
       width: 330px;
       height: 330px;
       z-index: -1;
+      pointer-events: none;
     }
   }
 
@@ -489,6 +516,14 @@ nav {
   padding: 0 20px 38px;
   position: relative;
   margin: 45px 20px;
+  transition: 0.25s;
+
+  &:hover {
+    transform: translateY(-3%) rotate(3deg);
+    &::after {
+      display: none;
+    }
+  }
 
   &.sec {
     &::after {
@@ -501,6 +536,7 @@ nav {
       width: 230px;
       height: 230px;
       z-index: -1;
+      pointer-events: none;
     }
   }
 
@@ -515,6 +551,7 @@ nav {
       width: 260px;
       height: 260px;
       z-index: -1;
+      pointer-events: none;
     }
   }
 
@@ -627,6 +664,12 @@ nav {
   border-radius: 12px;
   box-shadow: 2px 3px 5px hsla(0, 0%, 0%, 0.25);
   margin-top: 24px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: darken($p, 5%);
+    transform: translateY(-3%);
+  }
 
   i {
     margin-left: 10px;
@@ -879,18 +922,18 @@ nav {
 
   #hero,
   #events {
-    padding: 0 6rem;
+    padding: 0 5rem;
   }
 
   #contact {
-    padding: 0 6rem 11.5rem 6rem;
+    padding: 0 5rem 11.5rem 5rem;
   }
 
   section {
-    padding: 12rem 6rem;
+    padding: 12rem 5rem;
   }
 
   nav {
-    padding: 3.6rem 6.5rem;
+    padding: 3.6rem 5rem;
   }
 }

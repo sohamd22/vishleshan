@@ -189,7 +189,14 @@ nav {
 }
 
 .nav-links a:not(.reg-link) {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   margin-right: 4.4rem;
+}
+
+.nav-links a:not(.reg-link):hover {
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .reg-link {
@@ -211,6 +218,14 @@ nav {
           align-items: center;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.reg-link:hover {
+  background-color: #1576e9;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .menu {
@@ -315,12 +330,20 @@ nav {
   border-radius: 12px;
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .reg-btn img {
   width: 6.4rem;
   height: 3.4rem;
   margin-left: 7px;
+}
+
+.reg-btn:hover {
+  background-color: #1576e9;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 #about .gr {
@@ -391,6 +414,17 @@ nav {
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
   background-size: 108%;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.event-box:hover {
+  -webkit-transform: translateY(-3%) rotate(3deg);
+          transform: translateY(-3%) rotate(3deg);
+}
+
+.event-box:hover::after {
+  display: none;
 }
 
 .event-box.puzzle::after {
@@ -405,6 +439,7 @@ nav {
   width: 330px;
   height: 330px;
   z-index: -1;
+  pointer-events: none;
 }
 
 .event-box.calc::after {
@@ -419,6 +454,7 @@ nav {
   width: 330px;
   height: 330px;
   z-index: -1;
+  pointer-events: none;
 }
 
 .event-box::before {
@@ -499,6 +535,17 @@ nav {
   padding: 0 20px 38px;
   position: relative;
   margin: 45px 20px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.team-box:hover {
+  -webkit-transform: translateY(-3%) rotate(3deg);
+          transform: translateY(-3%) rotate(3deg);
+}
+
+.team-box:hover::after {
+  display: none;
 }
 
 .team-box.sec::after {
@@ -511,6 +558,7 @@ nav {
   width: 230px;
   height: 230px;
   z-index: -1;
+  pointer-events: none;
 }
 
 .team-box.code::after {
@@ -523,6 +571,7 @@ nav {
   width: 260px;
   height: 260px;
   z-index: -1;
+  pointer-events: none;
 }
 
 .team-box:nth-child(2n + 1) {
@@ -636,6 +685,14 @@ nav {
   -webkit-box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
   margin-top: 24px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.email-btn:hover {
+  background-color: #1576e9;
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
 }
 
 .email-btn i {
@@ -850,16 +907,16 @@ nav {
   }
   #hero,
   #events {
-    padding: 0 6rem;
+    padding: 0 5rem;
   }
   #contact {
-    padding: 0 6rem 11.5rem 6rem;
+    padding: 0 5rem 11.5rem 5rem;
   }
   section {
-    padding: 12rem 6rem;
+    padding: 12rem 5rem;
   }
   nav {
-    padding: 3.6rem 6.5rem;
+    padding: 3.6rem 5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
